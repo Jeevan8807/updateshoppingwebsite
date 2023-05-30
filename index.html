@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg  navbar bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> Shopping Wala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contac.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div >
+          <button type="submit" class="btn btn-danger" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login-Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login to iCoder</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- sign-up-Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Get an iCode Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="56.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 style="color: black;">Welcome to Shopping Center</h2>
+            <p style="color: black;">Buy, Enjoy and Trends</p>
+            <button class="btn btn-danger">Sell</button>
+            <button class="btn btn-primary">Become a Seller</button>
+            <button class="btn btn-success">Add cart</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="11.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 style="color: black;">The Best Choice For Shopping</h2>
+            <p style="color: black;">Buy, Enjoy and Trends </p>
+            <button class="btn btn-danger">Sell</button>
+            <button class="btn btn-primary">Become a Seller</button>
+            <button class="btn btn-success">Add cart</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="55.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 style="color: black;">Award Winning Company </h2>
+            <p style="color: black;">Buy, Enjoy and Trends</p>
+            <button class="btn btn-danger">Sell</button>
+            <button class="btn btn-primary">Become a Seller</button>
+            <button class="btn btn-success">Add cart</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class=" bg-warning text-black">
+    <div class="container my-4 ">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 ">
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3>Enticing discounts</h3>
+            <p>First and foremost, online shopping is predominantly about saving money.
+              Thus, many customers prefer JD Shopping due to considerable discounts and offers.
+              So, it’s no doubt that ‘discount’ is the biggest benefit of shopping on JD Shopping.
+              Importantly, JD Shopping provides generous discounts on a wide variety of items.
+              Also, the relevant offers of saving some bucks add to this proposition.</p>
+
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3>Huge inventory</h3>
+            <p>Undoubtedly, you will find almost every item on JD Shopping. This is mainly due to JD's Shopping strong
+              presence across the globe.
+
+              Since JD Shopping is a trusted e-commerce platform, many companies prefer launching their products on this
+              site.
+
+              Thus, consumers are well assured to find newly-launched items on JD Shopping. Also, many local companies
+              have their products listed here.</p>
+
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3>Reasonable shipping charges</h3>
+            <p>On the whole, the shipping or delivery charges on JD Shopping are definitely fair. On some items, Amazon
+              even provides free shipping!
+
+              Hence, consumers do not have to worry a great deal of facing high shipping charges.
+
+              Generally, the acceptable shipping charges or free (in some cases) delivery cost is a result of strong
+              logistics.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row" >
+      <div class="col">
+        <div class="card">
+          <img src="sam.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S22 Plus 5G (Green, 8GB, 128GB Storage) with No Cost EMI/Additional
+              Exchange Offers</h5>
+            <h4><span class="badge text-bg-danger">Trending</span></h4>
+            <p class="card-text">-31% ₹69,999
+              (31% off)
+              Get it by Friday, 2 June
+              FREE Delivery by JD Shopping
+            </p>
+            <a href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B09SH88XFC/ref=sr_1_1?crid=2FAEQRGLBA08B&keywords=samsung+s22+plus&qid=1685381355&sprefix=samsung+s22+%2Caps%2C477&sr=8-1"
+              class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+    
+
+      <div class="col">
+        <div class="card" >
+          <img src="22.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage) with No Cost
+              EMI/Additional
+              Exchange Offers</h5>
+            <h4><span class="badge text-bg-danger">Trending</span></h4>
+            <p class="card-text">₹94,999 M.R.P: ₹1,31,999
+              (28% off)
+              Get it by Tomorrow, 30 May
+              FREE Delivery by JD Shopping </p>
+            <a href="https://www.amazon.in/Samsung-Burgundy-Storage-Additional-Exchange/dp/B09SH7FDKT/ref=sr_1_14?crid=3AL8DYVXRQEW1&keywords=samsung+s23+ultra&qid=1685381281&sprefix=samsung+s23+ultra+%2Caps%2C513&sr=8-14"
+              class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+
+    
+      <div class="col">
+        <div class="card">
+          <img src="apple.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone 14 (128 GB) - Purple</h5>
+            <h4><span class="badge text-bg-danger">Trending</span></h4>
+            <p class="card-text">₹73,999 M.R.P: ₹79,900 (7% off)
+              Flat INR 4000 Off on HDFC BankCardsFlat INR 4000 Off on HDFC BankCards
+              FREE Delivery by JD Shopping</p>
+            <a href="https://www.amazon.in/Apple-iPhone-14-128GB-Purple/dp/B0BDJ213TX/ref=sr_1_1_sspa?crid=1FSE0H60O6QFD&keywords=iphone+14&qid=1685381020&sprefix=i%2Caps%2C260&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+              class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="col">
+        <div class="card" >
+          <img src="watc.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy Watch5 Bluetooth (44 mm, Graphite, Compatible with Android only)
+              Brand: Samsung</h5>
+            <h4><span class="badge text-bg-danger">New</span></h4>
+            <p class="card-text">-9% ₹30,999
+              M.R.P.: ₹33,999
+              Fulfilled
+              Inclusive of all taxes
+              EMI starts at ₹1,481. No Cost</p>
+            <a href="https://www.amazon.in/Samsung-Bluetooth-Graphite-Compatible-Android/dp/B0B99RZ38G/ref=sr_1_2?crid=3U27L393L2ADW&keywords=Samsung+Galaxy+Watch5+Bluetooth+%2844+mm%2C+Graphite%2C+Compatible+with+Android+only%29+Brand%3A+Samsung&qid=1685424589&s=electronics&sprefix=samsung+galaxy+watch5+bluetooth+44+mm%2C+graphite%2C+compatible+with+android+only+brand+samsung%2Celectronics%2C441&sr=1-2"
+              class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+    
+
+      <div class="col">
+        <div class="card" >
+          <img src="fire.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fire-Boltt Invincible Plus 1.43" AMOLED Display Smartwatch with Bluetooth Calling
+            </h5>
+            <h4><span class="badge text-bg-danger">Deal of the Day</span></h4>
+            <p class="card-text">-9% ₹30,999
+              -79% ₹4,499
+              M.R.P.: ₹21,000
+              Fulfilled
+              Inclusive of all taxes
+              EMI starts at ₹215. No Cost EMI available</p>
+            <a href="https://www.amazon.in/Fire-Boltt-Invincible-Smartwatch-Bluetooth-Connection/dp/B0BRMXW21H/ref=sr_1_3?crid=2FPVFATL47CUM&keywords=Fire-Boltt+Invincible+Plus+1.43%22+AMOLED+Display+Smartwatch+with+Bluetooth+Calling&qid=1685424894&s=electronics&sprefix=fire-boltt+invincible+plus+1.43+amoled+display+smartwatch+with+bluetooth+calling%2Celectronics%2C454&sr=1-3"
+              class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col">
+      <div class="card ">
+        <img src="25_.jpg" class="card-img-top" alt="" >
+        <div class="card-body">
+          <h5 class="card-title">Redmi Pad | MediaTek Helio G99 | 26.95cm (10.61 inch) 2K Resolution & 90Hz Refresh Rate
+            Display | 4GB RAM & 128GB Storage, Expandable up to 1TB | Quad Speaker - Dolby Atmos | Wi-Fi | Graphite Gray
+            4.4 out of 5 stars 493</h5>
+          <h4><span class="badge text-bg-danger"> Deal of the Day</span></h4>
+          <p class="card-text">41% off
+            ₹16,999.00 M.R.P.: ₹28,999.00
+            Fulfilled FREE Delivery.
+          </p>
+          <a href="8https://www.amazon.in/Redmi-MediaTek-26-95cm-Resolution-Expandable/dp/B0BLHL9T4V?ref_=Oct_DLandingS_D_2a091324_0"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+      <br>
+      <div class="col">
+      <div class="card ">
+        <img src="133.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PTron Newly Launched Zenbuds Pro1 Max ANC Earbuds, 30dB Active Noise Cancellation,
+            80Hrs
+            Playtime, Quad Mic ENC Calls, 13mm Deep Bass Drivers, BT5.3 Wireless Headphones & Type-C Fast Charging
+            (Black)
+          </h5>
+          <h4><span class="badge text-bg-danger">Deal of the Day</span></h4>
+          <p class="card-text">-73% ₹1,499
+            M.R.P.: ₹5,499
+            Inclusive of all taxes
+            EMI starts at ₹513 per month. </p>
+          <a href="https://www.amazon.in/Launched-Zenbuds-Cancellation-Playtime-Headphones/dp/B0BZT4SN8S/?_encoding=UTF8&_ref=dlx_gate_sd_dcl_tlt_6470217c_dt&pd_rd_w=HLTw6&content-id=amzn1.sym.9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_p=9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_r=VVS5E1CMMPR5AMRQR40Z&pd_rd_wg=8ooWM&pd_rd_r=ae965d28-91f2-4db1-8ae8-166bee40b617&ref_=pd_gw_unk&th=1"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col">
+      <div class="card  ">
+        <img src="mix.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">NutriPro Juicer Mixer Grinder - Smoothie Maker - 500 Watts (3 Jar, Gold)</h5>
+          <h4><span class="badge text-bg-danger">Deal of the Day</span></h4>
+          <p class="card-text">-67% ₹1,978
+            M.R.P.: ₹6,000
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹96. No Cost EMI available
+          <ul>Make Smoothies and Juices within seconds.</ul>
+          <ul>Also suitable for dry grinding, chutneys and dips</ul>
+          </p>
+          <a href="https://www.amazon.in/NutriPro-Juicer-Mixer-Grinder-Smoothie/dp/B0BM4GR6TN/ref=sr_1_3?keywords=NutriPro+Juicer+Mixer+Grinder+-+Smoothie+Maker+-+500+Watts+%283+Jar%2C+Gold%29&qid=1685431136&sr=8-3"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="col">
+      <div class="card  ">
+        <img src="555.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Redgear A-10 Wired Gaming Mouse with RGB LED, Lightweight and Durable Design, DPI Upto
+            2400, Compatible with Windows and MAC.</h5>
+          <h4><span class="badge text-bg-danger">Deal of the Day</span></h4>
+          <p class="card-text">
+            -64% ₹249
+            M.R.P.: ₹699
+            Fulfilled
+            Inclusive of all taxes
+            Lightweight Gaming mouse for quick moves during your gaming sessions
+            On the Fly Dpi Change upto 2400</p>
+          <a href="https://www.amazon.in/Redgear-Gaming-Mouse-Upto-2400/dp/B08372ZPVS?ref_=Oct_DLandingS_D_b6863be0_0"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col">
+      <div class="card">
+        <img src="789jpg.jpg" class="card-img-bottom" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">Ambrane Wireless Gaming Controller with Transparent Design, 2.4GHz Wireless Technology,
+            Illuminated Pad for PC - Windows, PS3 Console & Android TV(OP-WLGC01, Black) </h5>
+          <h4><span class="badge text-bg-danger">Deal of the Day</span></h4>
+          <p class="card-text">-10% ₹1,799
+            M.R.P.: ₹1,999
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹87. No Cost EMI available</p>
+          <a href="https://www.amazon.in/Ambrane-Controller-Transparent-Technology-Illuminated/dp/B0BY4PTCVB?ref_=Oct_DLandingS_D_b6863be0_4"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    
+      <div class="row my-4">
+      <div class="col">
+      <div class="card" >
+        <img src="cam.jpg" class="card-img-bottom" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nikon Mirrorless Z7 II Body with 24-70mm Lens with Additional Battery, Optical Zoom,
+            Black</h5>
+          <p class="card-text">₹2,69,490 M.R.P: ₹2,94,995 9 % off
+            Save extra with No Cost EMISave extra with No Cost EMI
+            Get it by Tomorrow, 31 May
+            FREE Delivery by JD Shopping</p>
+          <a href="https://www.amazon.in/NutriPro-Juicer-Mixer-Grinder-Smoothie/dp/B0BM4GR6TN/?_encoding=UTF8&_ref=dlx_gate_sd_dcl_tlt_ab13b09d_dt&pd_rd_w=HLTw6&content-id=amzn1.sym.9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_p=9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_r=VVS5E1CMMPR5AMRQR40Z&pd_rd_wg=8ooWM&pd_rd_r=ae965d28-91f2-4db1-8ae8-166bee40b617&ref_=pd_gw_unk&th=1"
+            class="btn btn-outline-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col">
+      <div class="card" >
+        <img src="cam2.jpg" class="card-img-bottom" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Canon Digital Camera EOS R6 Mark II with 24-105 USM Kit</h5>
+          <p class="card-text">₹2,99,990 M.R.P: ₹3,43,995 13 % off
+            Get it by Tomorrow, 31 May
+            FREE Delivery by JD Shopping</p>
+          <a href="https://www.amazon.in/Canon-EOS-R6-Mark-II/dp/B0BQYDSH8S/ref=sr_1_1?crid=3KIY95P5OSQZZ&keywords=Canon+Digital+Camera+EOS+R6+Mark+II+with+24-105+USM+Kit&qid=1685424498&s=electronics&sprefix=canon+digital+camera+eos+r6+mark+ii+with+24-105+usm+kit%2Celectronics%2C376&sr=1-1"
+            class="btn btn-outline-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col">
+      <div class="card" >
+        <img src="cam3jpg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sony Alpha ILCE-6100Y 24.2 MP Mirrorless Digital SLR Camera with 16-50 mm and 55-210 mm
+            Zoom Lenses (APS-C Sensor, Fast Auto Focus,Real-time Eye AF,Real-time Tracking,Vlogging & Tiltable
+            Screen),Black</h5>
+          <p class="card-text">-12% ₹78,990
+            M.R.P.: ₹89,990
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹3,774. No Cost EMI available</p>
+          <a href="https://www.amazon.in/Sony-ILCE-6100Y-Mirrorless-Real-time-Tracking/dp/B081JRLB4P/ref=sr_1_5?crid=1JVFH0P4FI8BE&keywords=sony+camera&qid=1685424039&s=electronics&sprefix=soney+%2Celectronics%2C246&sr=1-5"
+            class="btn btn-outline-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" >
+        <img src="cam3jpg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sony Alpha ILCE-6100Y 24.2 MP Mirrorless Digital SLR Camera with 16-50 mm and 55-210 mm
+            Zoom Lenses (APS-C Sensor, Fast Auto Focus,Real-time Eye AF,Real-time Tracking,Vlogging & Tiltable
+            Screen),Black</h5>
+          <p class="card-text">-12% ₹78,990
+            M.R.P.: ₹89,990
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹3,774. No Cost EMI available</p>
+          <a href="https://www.amazon.in/Sony-ILCE-6100Y-Mirrorless-Real-time-Tracking/dp/B081JRLB4P/ref=sr_1_5?crid=1JVFH0P4FI8BE&keywords=sony+camera&qid=1685424039&s=electronics&sprefix=soney+%2Celectronics%2C246&sr=1-5"
+            class="btn btn-outline-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" >
+        <img src="cam3jpg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sony Alpha ILCE-6100Y 24.2 MP Mirrorless Digital SLR Camera with 16-50 mm and 55-210 mm
+            Zoom Lenses (APS-C Sensor, Fast Auto Focus,Real-time Eye AF,Real-time Tracking,Vlogging & Tiltable
+            Screen),Black</h5>
+          <p class="card-text">-12% ₹78,990
+            M.R.P.: ₹89,990
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹3,774. No Cost EMI available</p>
+          <a href="https://www.amazon.in/Sony-ILCE-6100Y-Mirrorless-Real-time-Tracking/dp/B081JRLB4P/ref=sr_1_5?crid=1JVFH0P4FI8BE&keywords=sony+camera&qid=1685424039&s=electronics&sprefix=soney+%2Celectronics%2C246&sr=1-5"
+            class="btn btn-outline-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  
+
+
+    <div class="row my-4 ">
+      <div class="col">
+      <div class="card">
+        <img src="444.jpg" class="card-img-top" alt="..." height="350">
+        <div class="card-body">
+          <h5 class="card-title">Titan Regalia Chronograph Silver Dial Men's Watch-NN9308BM01/NP9308BM01
+          </h5>
+          <h5><span class="badge text-bg-danger">Trending</span></h5>
+          <p class="card-text">₹11,020
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹527. No Cost EMI available</p>
+          <a href="https://www.amazon.in/Titan-Regalia-Chronograph-Silver-Watch-NK9308BM01/dp/B007V37K20/ref=sr_1_15?crid=EN4SWKB6F3Z5&keywords=rolex+watches+for+men&qid=1685433036&sprefix=role%2Cspecialty-aps%2C318&sr=8-15-catcorr&srs=21812268031"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col">
+      <div class="card">
+        <img src="sas.jpg" class="card-img-top" alt="" height="200">
+        <div class="card-body">
+          <h5 class="card-title"> Adidas Men's Ownthegame 2.0 Basketball Shoe
+          </h5>
+          <h5><span class="badge text-bg-danger">Trending</span></h5>
+          <p class="card-text">₹6,999
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹334. No Cost EMI available
+          <ul>Sole: Rubber
+            Closure: Lace-Up
+            Shoe Width: Medium
+            Upper Material-Textile
+            Fastening-Lace up
+            Outsole Type-Non Marking
+            Ankle Height-Mid
+            Arch Type-Medium</ul>
+          </p>
+          <a href="https://www.amazon.in/Adidas-Textile-Ownthegame-Cblack-Basketball/dp/B094QFHGXW/ref=sr_1_1?keywords=adidas+shoes+men&qid=1685433245&sprefix=adi%2Cspecialty-aps%2C259&sr=8-1"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col">
+      <div class="card">
+        <img src="787.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"> Safari Prisma Trolley Bags 55cms, Softside Polyester Travel Suitcases with Trolley, 4
+            Wheel Red Small Cabin Luggage
+          </h5>
+          <h5><span class="badge text-bg-danger">Deal of the Day</span></h5>
+          <p class="card-text">-65% ₹2,499
+            M.R.P.: ₹7,100
+            Fulfilled
+            Inclusive of all taxes
+            EMI starts at ₹121. No Cost EMI available
+            </ul>
+          </p>
+          <a href="https://www.amazon.in/Adidas-Textile-Ownthegame-Cblack-Basketball/dp/B094QFHGXW/ref=sr_1_1?keywords=adidas+shoes+men&qid=1685433245&sprefix=adi%2Cspecialty-aps%2C259&sr=8-1"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col">
+      <div class="card">
+        <img src="ffff.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"> Ferrari 458 Speciale 1:18 Scale Bburago Model Sports Race Car Kids Fun Play Toy
+          </h5>
+          <h5><span class="badge text-bg-danger">Trending</span></h5>
+          <p class="card-text">
+            -23% ₹10,459
+            M.R.P.: ₹13,599
+            Inclusive of all taxes
+            Coupon:
+            Apply ₹150 coupon Terms
+            EMI starts at ₹500. No Cost EMI available
+            Ferrari 458 Speciale 1:18 Scale Bburago Model Sports Race Car Kids Fun Play Toy
+            Diecast model of a 1:18 Ferrari 458 Speciale. This highly detailed model from the Race and Play series
+            meticulously recreates the body of the original car
+            </ul>
+          </p>
+          <a href="https://www.amazon.in/dp/B01H7QB5NU/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B01H7QB5NU&pd_rd_w=hMZWA&content-id=amzn1.sym.2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_p=2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_r=WVVKQK6PSP58TVZWVM52&pd_rd_wg=7cjer&pd_rd_r=d1457130-e027-44d8-a81f-9d209a271b2f&s=toys&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw"
+            class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col">
+      <div class="card" >
+        <img src="145.jpg" class="card-img-top" alt="" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Fire-Boltt Eterno 1.99", Bluetooth Calling Smartwatch with 1184mm Display Area, AI
+            Voice
+            Assistant, 120+ Sports Modes (Black)</h5>
+          <h5><span class="badge text-bg-danger">Trending</span></h5>
+          <p class="card-text">-91% ₹1,699
+            M.R.P.: ₹18,999
+            Inclusive of all taxes
+            EMI starts at ₹82.
+            Bigger Touch Area - Fire-Boltt Eterno comes with a 1.99" Display and a 240*283 pixel high resolution. The
+            watch has a 500 NITS peak brightness that ensures you can clearly view the screen even in broad daylight</p>
+          <a href="#" class="btn btn-primary">Buy</a>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+    </div>
+ 
+    <div class="container my-4" >
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static"  style="background-color: rgb(6, 183, 223)">
+              <strong class="d-inline-block mb-2 text-primary">By Flight</strong>
+              <h3 class="mb-0">Limited period offer | Book travel tickets </h3>
+              <p class="card-text mb-auto">Get up to 15% off* on flight tickets
+                </p>
+                <a href="https://www.amazon.in/flights?ref_=perc_bosh_desktop" class="btn btn-outline-danger">Book Here</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250" src="1455.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static" style="background-color: rgb(6, 183, 223);">
+              <strong class="d-inline-block mb-2 text-success">By Train</strong>
+              <h3 class="mb-0">Limited period offer | Book travel tickets</h3>
+            
+              <p class="mb-auto">Zero gateway fees on trains</p>
+              <a href="https://www.amazon.in/train-tickets?ref_=perc_bost_desktop" class="btn btn-outline-danger">Book Here</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250" src="trains.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static" style="background-color: rgb(6, 183, 223);">
+              <strong class="d-inline-block mb-2 text-danger">By Bus</strong>
+             <h3 class="mb-0">Limited period offer | Book travel tickets</h3>
+              <p class="card-text mb-auto">Guaranteed rewards on bus tickets</p>
+              <a href="https://www.amazon.in/bus-tickets?ref_=perc_bosb_desktop" class="btn btn-outline-danger">Bus Booking</a>
+
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250" src="bus2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static"style="background-color: rgb(6, 183, 223);">
+              <strong class="d-inline-block mb-2 text-dark">Luggage</strong>
+              <h3 class="mb-0">Limited period offer | Book travel tickets</h3>
+              
+              <p class="mb-auto"> Products for your travel needs</p>
+              <a href="https://www.amazon.in/b/ref=perc_essentials_desktop?node=21812268031&pf_rd_r=FSXTVWP29RP07830E8QD&pf_rd_p=4d726c6b-220c-4961-bb36-6c4e781b7652&pd_rd_r=09cc360f-06fa-4593-ab86-d5474b945285&pd_rd_w=affSV&pd_rd_wg=Eiizs&ref_=pd_gw_unk"
+                class="btn btn-outline-danger">Get some Luggage </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250" src="bag.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2020–2021 Shopping Wala, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
